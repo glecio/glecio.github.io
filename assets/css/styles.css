@@ -975,7 +975,7 @@ body.light-theme {
   }
 
   .services__container {
-    grid-template-columns: repeat(2, 160px);
+    grid-template-columns: repeat(2, 270px);
     justify-content: center;
   }
 
@@ -1096,7 +1096,7 @@ body.light-theme {
   }
 
   .services__container {
-    grid-template-columns: repeat(3, 192px);
+    grid-template-columns: repeat(3, 270px);
     column-gap: 3rem;
   }
 
