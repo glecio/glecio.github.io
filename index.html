@@ -34,9 +34,8 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-ZQTM0EDSDP');
-  </script>
+    </script>
   </head>
   <body>
     <!--=============== HEADER ===============-->
@@ -72,8 +71,17 @@
             </li>
           </ul>
         </div>
-        <!-- Theme change button -->
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+        <div class="nav__actions">
+          <!-- Language toggle -->
+          <div class="lang-toggle">
+            <span class="lang-option active-lang" data-lang="pt-br">PT</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option" data-lang="en">EN</span>
+          </div>
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+        </div>
       </nav>
     </header>
 
@@ -82,13 +90,12 @@
       <!--=============== HOME ===============-->
       <section class="home section" id="home">
         <div class="home__container container grid">
-          <div class="home__data"
-            <span class="home__greeting"> Olá, eu sou </span>
+          <div class="home__data">
+            <span class="home__greeting" data-i18n="home.greeting">Olá, eu sou</span>
             <h1 class="home__name">Glecio Santos</h1>
             <h3 class="home__education">Developer</h3>
             <div class="home__buttons">
-                     
-              <a href="#about" class="button">Sobre mim</a>
+              <a href="#about" class="button" data-i18n="home.btn-about">Sobre mim</a>
             </div>
           </div>
 
@@ -111,19 +118,19 @@
             >
               <i class="bx bxl-github"></i>
             </a>
-          
           </div>
+
           <a href="#about" class="home__scroll">
             <i class="bx bx-mouse home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
+            <span class="home__scroll-name" data-i18n="home.scroll">Scroll Down</span>
           </a>
         </div>
       </section>
 
       <!--=============== ABOUT ===============-->
       <section class="about section" id="about">
-        <span class="section__subtitle">Introdução</span>
-        <h2 class="section__title">Sobre mim</h2>
+        <span class="section__subtitle" data-i18n="about.subtitle">Introdução</span>
+        <h2 class="section__title" data-i18n="about.title">Sobre mim</h2>
         <div class="about__container container grid">
           <img
             src="assets/img/about.jpg"
@@ -134,34 +141,34 @@
             <div class="about__info">
               <div class="about__box">
                 <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experiência</h3>
-                <span class="about__subtitle">8 Anos </span>
+                <h3 class="about__title" data-i18n="about.exp-title">Experiência</h3>
+                <span class="about__subtitle" data-i18n="about.exp-value">8 Anos</span>
               </div>
               <div class="about__box">
                 <i class="bx bx-briefcase-alt about__icon"></i>
-                <h3 class="about__title">Projetos</h3>
-                <span class="about__subtitle">28 + Projetos</span>
+                <h3 class="about__title" data-i18n="about.projects-title">Projetos</h3>
+                <span class="about__subtitle" data-i18n="about.projects-value">28 + Projetos</span>
               </div>
               <div class="about__box">
                 <i class="bx bx-support about__icon"></i>
-                <h3 class="about__title">Suporte</h3>
-                <span class="about__subtitle">Online 24/7</span>
+                <h3 class="about__title" data-i18n="about.support-title">Suporte</h3>
+                <span class="about__subtitle" data-i18n="about.support-value">Online 24/7</span>
               </div>
             </div>
-            <p class="about__description">
-              Sou desenvolvedor Web. Crio interfaces de fácil uso e com as tecnologias mais recentes. 
+            <p class="about__description" data-i18n="about.description">
+              Sou desenvolvedor Web. Crio interfaces de fácil uso e com as tecnologias mais recentes.
               Trabalho em parceria com designers e agências transformando protótipos para HTML.
               Possuo mais de 5 anos de atuação e diversos clientes satisfeitos com o resultado.
             </p>
-            <a href="#contact" class="button">Entre em contato</a>
+            <a href="#contact" class="button" data-i18n="about.contact-btn">Entre em contato</a>
           </div>
         </div>
       </section>
 
       <!--=============== SKILLS ===============-->
       <section class="skills section" id="skills">
-        <span class="section__subtitle">Minhas habilidades</span>
-        <h2 class="section__title">Experiência</h2>
+        <span class="section__subtitle" data-i18n="skills.subtitle">Minhas habilidades</span>
+        <h2 class="section__title" data-i18n="skills.title">Experiência</h2>
         <div class="skills__container container grid">
           <div class="skills__content">
             <h3 class="skills__title">Front End Developer</h3>
@@ -171,7 +178,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Avançado</span>
+                    <span class="skills__level" data-i18n="skills.advanced">Avançado</span>
                   </div>
                 </div>
 
@@ -179,7 +186,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Avançado</span>
+                    <span class="skills__level" data-i18n="skills.advanced">Avançado</span>
                   </div>
                 </div>
 
@@ -187,7 +194,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Javascript</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-i18n="skills.basic">Básico</span>
                   </div>
                 </div>
               </div>
@@ -197,7 +204,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Avançado</span>
+                    <span class="skills__level" data-i18n="skills.advanced">Avançado</span>
                   </div>
                 </div>
 
@@ -205,7 +212,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Intermediário</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediário</span>
                   </div>
                 </div>
 
@@ -213,7 +220,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">React</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-i18n="skills.basic">Básico</span>
                   </div>
                 </div>
               </div>
@@ -228,7 +235,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">PHP</h3>
-                    <span class="skills__level">Intermediário</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediário</span>
                   </div>
                 </div>
 
@@ -236,7 +243,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Ruby</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-i18n="skills.basic">Básico</span>
                   </div>
                 </div>
 
@@ -244,7 +251,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Node Js</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-i18n="skills.basic">Básico</span>
                   </div>
                 </div>
               </div>
@@ -254,7 +261,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Laravel</h3>
-                    <span class="skills__level">Intermediário</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediário</span>
                   </div>
                 </div>
 
@@ -262,7 +269,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">CakePHP</h3>
-                    <span class="skills__level">Intermediário</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediário</span>
                   </div>
                 </div>
 
@@ -270,7 +277,7 @@
                   <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">Codeigniter</h3>
-                    <span class="skills__level">Intermediário</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediário</span>
                   </div>
                 </div>
               </div>
@@ -281,152 +288,116 @@
 
       <!--=============== SERVICES ===============-->
       <section class="services section">
-        <span class="section__subtitle">Serviços</span>
-        <h2 class="section__title">Em que posso ajudar</h2>
+        <span class="section__subtitle" data-i18n="services.subtitle">Serviços</span>
+        <h2 class="section__title" data-i18n="services.title">Em que posso ajudar</h2>
 
         <div class="services__container container grid">
+          <!-- Card 1 -->
           <div class="services__card">
-            <h3 class="services__title">
-              Software Developer
-              
-            </h3>
+            <h3 class="services__title" data-i18n="services.s1.title">Software Developer</h3>
             <span class="services__button">
-              See More <i class="bx bx-right-arrow-alt services__icon"></i>
+              <span data-i18n="services.see-more">Saiba Mais</span>
+              <i class="bx bx-right-arrow-alt services__icon"></i>
             </span>
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Software Developer</h3>
-                <p class="services__modal-description">
-                  Service with more than 3 years of experience. Providing
-                  quality work to clients and companies.
+                <h3 class="services__modal-title" data-i18n="services.s1.title">Software Developer</h3>
+                <p class="services__modal-description" data-i18n="services.s1.desc">
+                  Serviço com mais de 3 anos de experiência. Entregando qualidade para clientes e empresas.
                 </p>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I develop the user interface.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s1.item1">Desenvolvo interfaces de usuário.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Web page development.</p>
+                    <p class="services__modal-info" data-i18n="services.s1.item2">Desenvolvimento de páginas web.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I create ux element interactions.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s1.item3">Crio interações de elementos UX.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I position your company brand.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s1.item4">Posiciono a marca da sua empresa.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and mockups of products for companies.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s1.item5">Design e mockups de produtos para empresas.</p>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
+          <!-- Card 2 -->
           <div class="services__card">
-            <h3 class="services__title">
-                Desenvolvimento de Websites
-            </h3>
+            <h3 class="services__title" data-i18n="services.s2.title">Desenvolvimento de Websites</h3>
             <span class="services__button">
-              Saiba Mais <i class="bx bx-right-arrow-alt services__icon"></i>
+              <span data-i18n="services.see-more">Saiba Mais</span>
+              <i class="bx bx-right-arrow-alt services__icon"></i>
             </span>
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Desenvolvimento de websites</h3>
-                <p class="services__modal-description">
-                    Desenvolvimento de websites, do front end (HTML, CSS e JavaScript) ao back end (PHP, Laravel, CodeIgniter ou Rails),
+                <h3 class="services__modal-title" data-i18n="services.s2.modal-title">Desenvolvimento de Websites</h3>
+                <p class="services__modal-description" data-i18n="services.s2.desc">
+                  Desenvolvimento de websites, do front end (HTML, CSS e JavaScript) ao back end (PHP, Laravel, CodeIgniter ou Rails).
                 </p>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                        Construção de layouts únicos 
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s2.item1">Construção de layouts únicos.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                        Adaptação responsiva (PSD para HTML)</p>
+                    <p class="services__modal-info" data-i18n="services.s2.item2">Adaptação responsiva (PSD para HTML).</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s2.item3">Layouts responsivos.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Layouts responsivos
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and mockups of products for companies.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s2.item4">Design e mockups de produtos para empresas.</p>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
+          <!-- Card 3 -->
           <div class="services__card">
-            <h3 class="services__title">Hospedagem <br />e infraestrutura</h3>
+            <h3 class="services__title" data-i18n="services.s3.title">Hospedagem e Infraestrutura</h3>
             <span class="services__button">
-              See More <i class="bx bx-right-arrow-alt services__icon"></i>
+              <span data-i18n="services.see-more">Saiba Mais</span>
+              <i class="bx bx-right-arrow-alt services__icon"></i>
             </span>
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Hospedagem e infraestrutura</h3>
-                <p class="services__modal-description">
-                  Service with more than 3 years of experience. Providing
-                  quality work to clients and companies.
+                <h3 class="services__modal-title" data-i18n="services.s3.modal-title">Hospedagem e Infraestrutura</h3>
+                <p class="services__modal-description" data-i18n="services.s3.desc">
+                  Serviços de hospedagem com mais de 3 anos de experiência. Entregando qualidade para clientes e empresas.
                 </p>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Hospedagem de sites, sistemas e e-mails.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s3.item1">Hospedagem de sites, sistemas e e-mails.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                    
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s3.item2">Configuração e manutenção de servidores.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I create ux element interactions.
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s3.item3">Gerenciamento de domínios.</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I position your company brand.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                        
-                    </p>
+                    <p class="services__modal-info" data-i18n="services.s3.item4">Certificados SSL e segurança.</p>
                   </li>
                 </ul>
               </div>
@@ -437,8 +408,8 @@
 
       <!--=============== WORK ===============-->
       <section class="work section" id="work">
-        <span class="section__subtitle">Meu Portfólio</span>
-        <h3 class="section__title">Trabalhos recentes</h3>
+        <span class="section__subtitle" data-i18n="work.subtitle">Meu Portfólio</span>
+        <h3 class="section__title" data-i18n="work.title">Trabalhos recentes</h3>
 
         <div class="work__filters">
           <span class="work__item active__work" data-filter="all">All</span>
@@ -453,9 +424,7 @@
         <div class="work__container container grid">
           <div class="work__card mix laravel">
             <img src="assets/img/work1.png" alt="Work 1" class="work__img" />
-
             <h3 class="work__title">Web Site (Laravel)</h3>
-
             <a href="https://uirb.com.br/" class="work__button" target="_blank">
               Demo <i class="bx bx-right-arrow-alt work-icon"></i>
             </a>
@@ -463,167 +432,77 @@
 
           <div class="work__card mix rails">
             <img src="assets/img/work2.png" alt="Work 2" class="work__img" />
-
             <h3 class="work__title">Simple Blog (Rails)</h3>
-
-            <a
-              href="https://gblograils.herokuapp.com/"
-              class="work__button"
-              target="_blank"
-            >
+            <a href="https://gblograils.herokuapp.com/" class="work__button" target="_blank">
               Demo <i class="bx bx-right-arrow-alt work-icon"></i>
             </a>
           </div>
 
           <div class="work__card mix html">
             <img src="assets/img/work3.png" alt="Work 3" class="work__img" />
-
-            <h3 class="work__title">Coutdown Timer</h3>
-
-            <a
-              href="https://glecio.github.io/countdown/"
-              class="work__button"
-              target="_blank"
-            >
+            <h3 class="work__title">Countdown Timer</h3>
+            <a href="https://glecio.github.io/countdown/" class="work__button" target="_blank">
               Demo <i class="bx bx-right-arrow-alt work-icon"></i>
             </a>
           </div>
-          
+
           <div class="work__card mix html">
             <img src="assets/img/work5.png" alt="Product Preview Card" class="work__img" />
-
             <h3 class="work__title">Product Preview Card</h3>
-            <a
-              href="https://glecio.github.io/product-preview-card-component-main/"
-              class="work__button"
-              target="_blank"
-            >
-              Demo <i class="bx bx-right-arrow-alt work-icon"></i>
-            </a>
-          </div>          
-          
-          <div class="work__card mix wordpress">
-            <img src="assets/img/work4.png" alt="Product Preview Card" class="work__img" />
-
-            <h3 class="work__title">Landing Page(WP)</h3>
-            <a
-              href="https://matriculas.uirb.com.br/"
-              class="work__button"
-              target="_blank"
-            >
+            <a href="https://glecio.github.io/product-preview-card-component-main/" class="work__button" target="_blank">
               Demo <i class="bx bx-right-arrow-alt work-icon"></i>
             </a>
           </div>
 
           <div class="work__card mix wordpress">
-            <img src="assets/img/work4a.png" alt="Product Preview Card" class="work__img" />
+            <img src="assets/img/work4.png" alt="Landing Page WP" class="work__img" />
+            <h3 class="work__title">Landing Page (WP)</h3>
+            <a href="https://matriculas.uirb.com.br/" class="work__button" target="_blank">
+              Demo <i class="bx bx-right-arrow-alt work-icon"></i>
+            </a>
+          </div>
 
-            <h3 class="work__title">Landing Page(WP + ACF)</h3>
-            <a
-              href="https://virtugnl.com/"
-              class="work__button"
-              target="_blank"
-            >
+          <div class="work__card mix wordpress">
+            <img src="assets/img/work4a.png" alt="Landing Page WP ACF" class="work__img" />
+            <h3 class="work__title">Landing Page (WP + ACF)</h3>
+            <a href="https://virtugnl.com/" class="work__button" target="_blank">
               Demo <i class="bx bx-right-arrow-alt work-icon"></i>
             </a>
           </div>
 
           <div class="work__card mix react">
             <img src="assets/img/work6.png" alt="Work 4" class="work__img" />
-
-            <h3 class="work__title">Interact Rating Component (React)</h3>
-
-            <a href="https://glecio.github.io/interactive-rating-component/" class="work__button" target="_blank"> 
+            <h3 class="work__title">Interactive Rating Component (React)</h3>
+            <a href="https://glecio.github.io/interactive-rating-component/" class="work__button" target="_blank">
               Demo <i class="bx bx-right-arrow-alt work-icon"></i>
             </a>
           </div>
 
           <div class="work__card mix cakephp">
             <img src="assets/img/work7.png" alt="Work 4" class="work__img" />
-
             <h3 class="work__title">Sistema (CakePhp)</h3>
-
             <a href="https://servicos.cantuariadeazevedo.com.br/" class="work__button" target="_blank">
-              Demo <i class="bx bx-right-arrow-alt work-icon"></i></a>
-          
-        
+              Demo <i class="bx bx-right-arrow-alt work-icon"></i>
+            </a>
           </div>
-
-         
         </div>
       </section>
 
-      <!--=============== TESTIMONIALS ===============-->
-      <!--
-      <section class="testimonial section">
-        <span class="section__subtitle">My clients say</span>
-        <h3 class="section__title">Testimonials</h3>
-
-        <div class="testimonial__container container swiper">
-          <div class="swiper-wrapper">
-            <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial1.png"
-                alt="Testimonial 1"
-                class="testimonial__img"
-              />
-
-              <h3 class="testimonial__name">Arthur Guterres</h3>
-              <p class="testimonial__description">
-                A really good job, all aspects of the project were followed step
-                by step and with good results.
-              </p>
-            </div>
-            <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial2.png"
-                alt="Testimonial 2"
-                class="testimonial__img"
-              />
-
-              <h3 class="testimonial__name">Paula Silva</h3>
-              <p class="testimonial__description">
-                A really good job, all aspects of the project were followed step
-                by step and with good results.
-              </p>
-            </div>
-            <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial3.png"
-                alt="Testimonial 3"
-                class="testimonial__img"
-              />
-
-              <h3 class="testimonial__name">Célio Roberto</h3>
-              <p class="testimonial__description">
-                A really good job, all aspects of the project were followed step
-                by step and with good results.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-      -->
       <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
-        <span class="section__subtitle">Em que posso lhe ser útil?</span>
-        <h2 class="section__title">Entre em contato</h2>
+        <span class="section__subtitle" data-i18n="contact.subtitle">Em que posso lhe ser útil?</span>
+        <h2 class="section__title" data-i18n="contact.title">Entre em contato</h2>
 
         <div class="contact__container container grid">
           <div class="contact__content">
-            <h3 class="contact__title"></h3>
-
             <div class="contact__info">
               <div class="contact__card">
                 <i class="bx bx-mail-send contact__card-icon"></i>
                 <h3 class="contact__card-title">Email</h3>
                 <span class="contact__card-data">glecio(at)ymail.com</span>
-
-                <a href=#contact" class="contact__button">
-                  Conversar<i
-                    class="bx bx-right-arrow-alt contact__button-icon"
-                  ></i>
+                <a href="#contact" class="contact__button">
+                  <span data-i18n="contact.chat">Conversar</span>
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
 
@@ -632,66 +511,66 @@
                 <h3 class="contact__card-title">WhatsApp</h3>
                 <span class="contact__card-data">11 912544519</span>
                 <a href="https://wa.me/5511912544519?text=Ol%C3%A1!%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="contact__button" target="_blank">
-                  Conversar<i
-                    class="bx bx-right-arrow-alt contact__button-icon"
-                  ></i>
+                  <span data-i18n="contact.chat">Conversar</span>
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
 
               <div class="contact__card">
-                <i class="bx bxl-telegram"></i>
+                <i class="bx bxl-telegram contact__card-icon"></i>
                 <h3 class="contact__card-title">Telegram</h3>
                 <span class="contact__card-data">@glecio</span>
-
                 <a href="https://t.me/glecio" class="contact__button">
-                  Conversar<i
-                    class="bx bx-right-arrow-alt contact__button-icon"
-                  ></i>
+                  <span data-i18n="contact.chat">Conversar</span>
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
             </div>
           </div>
 
           <div class="contact__content">
-            <h3 class="contact__title">Envie sua mensagem</h3>
-            <form action="https://formsubmit.co/e1386b8029e0693dbe51f0b4b9ae77cf" class="contact__form"  method="POST">
+            <h3 class="contact__title" data-i18n="contact.form-title">Envie sua mensagem</h3>
+            <form action="https://formsubmit.co/e1386b8029e0693dbe51f0b4b9ae77cf" class="contact__form" method="POST">
               <input type="hidden" name="_subject" value="New Portfolio Contact!">
               <input type="hidden" name="_autoresponse" value="Obrigado pelo contato! (Thanks for contacting me)">
 
-
               <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Nome</label>
+                <label class="contact__form-tag" data-i18n="contact.name-label">Nome</label>
                 <input
                   type="text"
-                  name="name" required
+                  name="name"
+                  required
+                  data-i18n-placeholder="contact.name-placeholder"
                   placeholder="Seu nome"
                   class="contact__form-input"
                 />
               </div>
 
               <div class="contact__form-div">
-                <label for="" class="contact__form-tag">E-mail</label>
+                <label class="contact__form-tag" data-i18n="contact.email-label">E-mail</label>
                 <input
                   type="text"
-                  name="email" required
+                  name="email"
+                  required
+                  data-i18n-placeholder="contact.email-placeholder"
                   placeholder="Seu e-mail"
                   class="contact__form-input"
                 />
               </div>
 
               <div class="contact__form-div contact__form-area">
-                <label for="" class="contact__form-tag"></label>
+                <label class="contact__form-tag"></label>
                 <textarea
                   name="message"
-                  id=""
                   cols="30"
                   rows="10"
+                  data-i18n-placeholder="contact.msg-placeholder"
                   placeholder="Insira sua mensagem"
                   class="contact__form-input"
                 ></textarea>
               </div>
 
-              <button type="submit" class="button">Enviar mensagem</button>
+              <button type="submit" class="button" data-i18n="contact.send-btn">Enviar mensagem</button>
             </form>
           </div>
         </div>
@@ -705,27 +584,23 @@
 
         <ul class="footer__list">
           <li>
-            <a href="#about" class="footer__link">About</a>
+            <a href="#about" class="footer__link" data-i18n="footer.about">About</a>
           </li>
           <li>
-            <a href="#work" class="footer__link">Projects</a>
+            <a href="#work" class="footer__link" data-i18n="footer.projects">Projects</a>
           </li>
           <li>
-            <a href="#testimonial" class="footer__link">Testimonial</a>
+            <a href="#testimonial" class="footer__link" data-i18n="footer.testimonial">Testimonial</a>
           </li>
         </ul>
 
         <ul class="footer__social">
-          <a
-              href="https://github.com/glecio"
-              class="home__social-link"
-              target="_blank"
-            >
-              <i class="bx bxl-github"></i>
-            </a>
+          <a href="https://github.com/glecio" class="home__social-link" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
         </ul>
 
-        <span class="footer__copy">
+        <span class="footer__copy" data-i18n="footer.copy">
           &#169; Glecio Santos. All rights reserved
         </span>
       </div>
@@ -736,6 +611,9 @@
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== I18N ===============-->
+    <script src="assets/js/i18n.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>

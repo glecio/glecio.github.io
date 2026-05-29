@@ -109,6 +109,38 @@ img {
   height: auto;
 }
 
+/*=============== NAV ACTIONS ===============*/
+.nav__actions {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+/*=============== LANGUAGE TOGGLE ===============*/
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-size: var(--smaller-font-size);
+}
+
+.lang-option {
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color .3s;
+  font-weight: var(--font-medium);
+}
+
+.lang-option:hover,
+.lang-option.active-lang {
+  color: var(--first-color);
+}
+
+.lang-divider {
+  color: var(--text-color-light);
+  font-size: var(--tiny-font-size);
+}
+
 /*=============== THEME ===============*/
 .change-theme {
   font-size: 1.25rem;
